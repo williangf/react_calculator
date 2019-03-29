@@ -5,10 +5,8 @@ import './App.scss';
 class App extends Component {
   render() {
     return (
-      <div className="app">
-        <div className="app-container">
-          <Calculator />
-        </div>
+      <div className="app-container">
+        <Calculator />
       </div>
     );
   }

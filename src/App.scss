@@ -1,29 +1,38 @@
-body {
+html {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #222222;
-  perspective: 400px;
-  background-image: url("https://images.pond5.com/lobby-hotel-blurred-background-footage-085160468_prevstill.jpeg");
+  perspective: 800px;
+  background-image: url("https://static1.squarespace.com/static/58586fa5ebbd1a60e7d76d3e/t/5911e6bc2994ca7eecb7674a/1494345417734/");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-.app {
-  width: 1500px;
-  height: 500px;
-  transform-style: preserve-3d;
-  transform: rotateX(30deg) scale3d(.5,.5,.5) translateY(100px);
-  background-image: url("https://image.freepik.com/free-photo/lumber-desk-texture_1194-6753.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.app-container {
+body, #root {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: 400px;
+  overflow: hidden;
+}
+
+.app-container {
+  transform-style: preserve-3d;
+  transform: rotateX(40deg) translateY(50px);
+  background-image: url("https://image.freepik.com/free-photo/wooden-texture_1208-334.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: -200px;
+  z-index: 10;
+  border-radius: 50%;
 }
